@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Tech Talks and Workshops",
+      "details": "We offer a series of tech talks and workshops conducted by industry experts covering emerging technologies, programming languages, AI, cybersecurity, or other relevant tech topics.",
+      "image": "https://i.ibb.co/jWn24dL/tech-talk-workshop.jpg",
+      "price": 70000
+    },
+    {
+      "id": 2,
+      "name": "Gaming Tournaments",
+      "details": "Organize competitive gaming tournaments for popular video games, attracting gamers to showcase their skills and compete for prizes.",
+      "image": "https://i.ibb.co/zS0vfPM/gaming-tournament.jpg",
+      "price": 40000
+    },
+    {
+      "id": 3,
+      "name": "Panel Discussions and Q&A Sessions",
+      "details": "Arrange panel discussions featuring thought leaders, professionals, and enthusiasts discussing current trends, challenges, and opportunities in the tech and gaming industries.",
+      "image": "https://i.ibb.co/6Xkb708/panel-discussion-q-a.png",
+      "price": 30000
+    },
+    {
+      "id": 4,
+      "name": "Product Launches and Demos",
+      "details": "Showcase new tech products and gaming releases, allowing attendees to experience live demos and interact with the latest innovations.",
+      "image": "https://i.ibb.co/qJ4hK3h/tech-launch.png",
+      "price": 60000
+    },
+    {
+      "id": 5,
+      "name": "Hackathons and Coding Competitions",
+      "details": "Host coding competitions and hackathons to encourage developers to showcase their programming skills and create innovative solutions within a limited time frame.",
+      "image": "https://i.ibb.co/Ct23d6r/hackathon.jpg",
+      "price": 25000
+    },
+    {
+      "id": 6,
+      "name": "Tech and Gaming Expo",
+      "details": "Organize an expo featuring booths from various tech and gaming companies, where attendees can explore the latest gadgets, software, games, and related products.",
+      "image": "https://i.ibb.co/GFnQwhN/tech-expo.jpg",
+      "price": 80000
+    }
+  ]
+  
