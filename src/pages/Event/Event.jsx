@@ -1,16 +1,13 @@
-import { useEffect, useState } from "react";
+
 import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../shared/Navbar";
 
 const Event = () => {
 
     const event = useLoaderData();
-    // const { id, name, details, image, price } = event;
 
     const { _id } = useParams();
-    // console.log(typeof _id);
     const idInt = parseInt(_id);
-    // console.log(typeof idInt);
 
     const anEvent = event.find(item => item.id === idInt);
     // console.log(anEvent);

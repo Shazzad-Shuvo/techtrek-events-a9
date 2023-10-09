@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const Root = () => {
     return (
-        <div className="max-w-6xl mx-auto">
+        <div style={{ backgroundImage: 'url(https://i.ibb.co/9tmg1rC/subtle-prism.png)', backgroundSize:'cover' }}>
             <Outlet></Outlet>
         </div>
     );

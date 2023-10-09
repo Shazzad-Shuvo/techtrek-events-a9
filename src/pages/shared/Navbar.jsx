@@ -1,6 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                console.log('logged out successfully');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    };
 
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -9,8 +22,8 @@ const Navbar = () => {
     </>
 
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className="max-w-6xl mx-auto">
+            <div className="navbar backdrop-blur-3xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,7 +41,24 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Login</a>
+                    {
+                        user && 
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+                            <div className="w-10 rounded-full">
+                                <img src={user?.photoURL} />
+                            </div>
+                        </label>
+                    }
+                    {
+                        user ?
+                            <>
+                                <p className="mr-4">{user.displayName}</p>
+                                <button onClick={handleLogOut} className="btn bg-transparent">Log Out</button>
+                            </> :
+                            <Link to='/login'>
+                                <button className="btn">Login</button>
+                            </Link>
+                    }
                 </div>
             </div>
         </div>
