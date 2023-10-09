@@ -6,7 +6,7 @@ const OurTeam = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center mt-20">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
                     {/* <!-- 1 card --> */}
                     <div className="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
@@ -14,187 +14,94 @@ const OurTeam = () => {
                             <img className="w-14 h-14 object-cover rounded-full mx-auto shadow-lg" src="https://i.ibb.co/WF00mnw/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg" alt="" />
                         </div>
                         <div className="mt-8">
-                            <p className="text-xl font-semibold my-2">CEO</p>
-                            <div className="flex space-x-2 text-gray-400 text-sm">
-                                {/* <!-- svg  --> */}
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <p>Marketing Team</p>
+                            <p className="text-xl font-semibold my-2">Austin Powers</p>
+                            <div className="flex items-center space-x-2 text-sm">
+                                <p className=" text-lg"><GrLocation></GrLocation></p>
+                                <p>CEO</p>
                             </div>
-                            {/* <div className="flex space-x-2 text-gray-400 text-sm my-3">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <p>1 Weeks Left</p>
-                            </div> */}
                             <div className="border-t-2"></div>
 
                             <div className="flex justify-between">
                                 <div className="my-2">
-                                    <p className="font-semibold text-base mb-2">Team Member</p>
+                                    <p className="font-semibold text-base mb-2">Project Handled</p>
                                     <div className="flex space-x-2">
-                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                            className="w-6 h-6 rounded-full" />
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Woman_7.jpg"
-                                            className="w-6 h-6 rounded-full" />
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSqK0tVELGWDYAiUY1oRrfnGJCKSKv95OGUtm9eKG9HQLn769YDujQi1QFat32xl-BiY&usqp=CAU"
-                                            className="w-6 h-6 rounded-full" />
+                                        <p className="text-gray-400 font-semibold">37</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- 2 card --> */}
+                    <div className="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                        <div className=" text-white flex items-center absolute rounded-full py-2 px-2 shadow-xl bg-pink-500 left-4 -top-6">
+                            <img className="w-14 h-14 object-cover rounded-full mx-auto shadow-lg" src="https://i.ibb.co/g3FkDZ2/photo-1611342799915-5dd9f1665d04-ixid-MXwx-Mj-A3f-DB8-MHxwa-G90by1w-YWdlf-Hx8f-GVuf-DB8f-Hw-ixlib-rb.jpg" alt="" />
+                        </div>
+                        <div className="mt-8">
+                            <p className="text-xl font-semibold my-2">Julia Dean</p>
+                            <div className="flex items-center space-x-2 text-sm">
+                                <p className=" text-lg"><GrLocation></GrLocation></p>
+                                <p>Creative Manager</p>
+                            </div>
+                            <div className="border-t-2"></div>
+
+                            <div className="flex justify-between">
                                 <div className="my-2">
-                                    <p className="font-semibold text-base mb-2">Progress</p>
-                                    <div className="text-base text-gray-400 font-semibold">
-                                        <p>34%</p>
+                                    <p className="font-semibold text-base mb-2">Project Handled</p>
+                                    <div className="flex space-x-2">
+                                        <p className="text-gray-400 font-semibold">37</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- 3 card --> */}
+                    <div className="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                        <div className=" text-white flex items-center absolute rounded-full py-2 px-2 shadow-xl bg-pink-500 left-4 -top-6">
+                            <img className="w-14 h-14 object-cover rounded-full mx-auto shadow-lg" src="https://i.ibb.co/j86sxQV/albert-dera-ILip77-Sbm-OE-unsplash.jpg" alt="" />
+                        </div>
+                        <div className="mt-8">
+                            <p className="text-xl font-semibold my-2">Harisson Ford</p>
+                            <div className="flex items-center space-x-2 text-sm">
+                                <p className=" text-lg"><GrLocation></GrLocation></p>
+                                <p>Event Planning Expert</p>
+                            </div>
+                            <div className="border-t-2"></div>
+
+                            <div className="flex justify-between">
+                                <div className="my-2">
+                                    <p className="font-semibold text-base mb-2">Project Handled</p>
+                                    <div className="flex space-x-2">
+                                        <p className="text-gray-400 font-semibold">33</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- 4 card --> */}
+                    <div className="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
+                        <div className=" text-white flex items-center absolute rounded-full py-2 px-2 shadow-xl bg-pink-500 left-4 -top-6">
+                            <img className="w-14 h-14 object-cover rounded-full mx-auto shadow-lg" src="https://i.ibb.co/3y54fwQ/christopher-campbell-r-DEOVt-E7v-Os-unsplash.jpg" alt="" />
+                        </div>
+                        <div className="mt-8">
+                            <p className="text-xl font-semibold my-2">Christene Johnson</p>
+                            <div className="flex items-center space-x-2 text-sm">
+                                <p className=" text-lg"><GrLocation></GrLocation></p>
+                                <p>Tech Support Planner</p>
+                            </div>
+                            <div className="border-t-2"></div>
+
+                            <div className="flex justify-between">
+                                <div className="my-2">
+                                    <p className="font-semibold text-base mb-2">Project Handled</p>
+                                    <div className="flex space-x-2">
+                                        <p className="text-gray-400 font-semibold">35</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* <!-- 2 card -->
-                    <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
-                        <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-green-500 left-4 -top-6">
-                            <!-- svg  -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div class="mt-8">
-                            <p class="text-xl font-semibold my-2">Web Design</p>
-                            <div class="flex space-x-2 text-gray-400 text-sm">
-                                <!-- svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <p>Core UI Team</p>
-                            </div>
-                            <div class="flex space-x-2 text-gray-400 text-sm my-3">
-                                <!-- svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <p>3 Weeks Left</p>
-                            </div>
-                            <div class="border-t-2 "></div>
 
-                            <div class="flex justify-between">
-                                <div class="my-2">
-                                    <p class="font-semibold text-base mb-2">Team Member</p>
-                                    <div class="flex space-x-2">
-                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                            class="w-6 h-6 rounded-full" />
-                                    </div>
-                                </div>
-                                <div class="my-2">
-                                    <p class="font-semibold text-base mb-2">Progress</p>
-                                    <div class="text-base text-gray-400 font-semibold">
-                                        <p>76%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3 card -->
-                    <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
-                        <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-blue-500 left-4 -top-6">
-                            <!-- svg  -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg>
-                        </div>
-                        <div class="mt-8">
-                            <p class="text-xl font-semibold my-2">Leading Page</p>
-                            <div class="flex space-x-2 text-gray-400 text-sm">
-                                <!-- svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <p>Marketing Team</p>
-                            </div>
-                            <div class="flex space-x-2 text-gray-400 text-sm my-3">
-                                <!-- svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <p>2 Days Left</p>
-                            </div>
-                            <div class="border-t-2 "></div>
-
-                            <div class="flex justify-between">
-                                <div class="my-2">
-                                    <p class="font-semibold text-base mb-2">Team Member</p>
-                                    <div class="flex space-x-2">
-                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                            class="w-6 h-6 rounded-full" />
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSqK0tVELGWDYAiUY1oRrfnGJCKSKv95OGUtm9eKG9HQLn769YDujQi1QFat32xl-BiY&usqp=CAU"
-                                            class="w-6 h-6 rounded-full" />
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Woman_7.jpg"
-                                            class="w-6 h-6 rounded-full" />
-                                    </div>
-                                </div>
-                                <div class="my-2">
-                                    <p class="font-semibold text-base mb-2">Progress</p>
-                                    <div class="text-base text-gray-400 font-semibold">
-                                        <p>4%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4 card -->
-                    <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
-                        <div class=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-yellow-500 left-4 -top-6">
-                            <!-- svg  -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
-                            </svg>
-                        </div>
-                        <div class="mt-8">
-                            <p class="text-xl font-semibold my-2">Business Compare</p>
-                            <div class="flex space-x-2 text-gray-400 text-sm">
-                                <!-- svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <p>Marketing Team</p>
-                            </div>
-                            <div class="flex space-x-2 text-gray-400 text-sm my-3">
-                                <!-- svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <p>1 Month Left</p>
-                            </div>
-                            <div class="border-t-2 "></div>
-
-                            <div class="flex justify-between">
-                                <div class="my-2">
-                                    <p class="font-semibold text-base mb-2">Team Member</p>
-                                    <div class="flex space-x-2">
-                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                            class="w-6 h-6 rounded-full" />
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Woman_7.jpg"
-                                            class="w-6 h-6 rounded-full" />
-                                    </div>
-                                </div>
-                                <div class="my-2">
-                                    <p class="font-semibold text-base mb-2">Progress</p>
-                                    <div class="text-base text-gray-400 font-semibold">
-                                        <p>90%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
             <Footer></Footer>

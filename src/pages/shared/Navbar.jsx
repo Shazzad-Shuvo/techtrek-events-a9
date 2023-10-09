@@ -19,12 +19,14 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/register'>Register</NavLink></li>
         <li><NavLink to='/login'>login</NavLink></li>
-        <div>
         {
             user &&
-        <li><NavLink to='/team'>Our Team</NavLink></li>
+            <>
+                <li><NavLink to='/team'>Our Team</NavLink></li>
+                <li><NavLink to='/about'>About Us</NavLink></li>
+            </>
         }
-        </div>
+
     </>
 
     return (
@@ -47,10 +49,6 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {/* {
-                        user &&
-                        
-                    } */}
                     {
                         user ?
                             <>
