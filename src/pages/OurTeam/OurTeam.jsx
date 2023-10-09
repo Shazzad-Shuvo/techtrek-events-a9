@@ -6,7 +6,7 @@ const OurTeam = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="flex items-center justify-center mt-20">
+            <div className="flex items-center justify-center mt-44 lg:mt-20">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
                     {/* <!-- 1 card --> */}
                     <div className="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">

@@ -1,16 +1,23 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 
 
 const Review = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, [])
+
     return (
         <div className="max-w-6xl mx-auto mt-20">
             <h2 className="text-4xl font-semibold text-center">Client Reviews</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {/* card 1 */}
-                <div className="mx-5 min-h-screen grid place-content-center">
+                <div className="mx-5 min-h-screen grid place-content-center" data-aos="flip-right">
                     <div className="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl text-white p-8 text-center h-72 max-w-sm mx-auto">
                         <h1 className="text-2xl mb-3 underline">Satisfactory</h1>
                         <p className="text-sm">They played an importtant role in making my tech launch event a success.</p>
@@ -23,7 +30,7 @@ const Review = () => {
                     </div>
                 </div>
                 {/* card 2 */}
-                <div className="mx-5 min-h-screen grid place-content-center">
+                <div className="mx-5 min-h-screen grid place-content-center" data-aos="flip-left">
                     <div className="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl text-white p-8 text-center h-72 max-w-sm mx-auto">
                         <h1 className="text-2xl mb-3 underline">Excellent</h1>
                         <p className="text-sm">I would not have found a better planner for my gaming fest other than TechTrek.</p>
@@ -36,7 +43,7 @@ const Review = () => {
                     </div>
                 </div>
                 {/* card 3 */}
-                <div className="mx-5 min-h-screen grid place-content-center">
+                <div className="mx-5 min-h-screen grid place-content-center" data-aos="flip-right">
                     <div className="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl text-white p-8 text-center h-72 max-w-sm mx-auto">
                         <h1 className="text-2xl mb-3 underline">Awesome</h1>
                         <p className="text-sm">They are really agile and energetic people that you can rely on to get the job done.</p>
@@ -49,7 +56,8 @@ const Review = () => {
                     </div>
                 </div>
                 {/* card 4 */}
-                <div className="mx-5 min-h-screen grid place-content-center">
+                <div className="mx-5 min-h-screen grid place-content-center"
+                data-aos="flip-left">
                     <div className="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl text-white p-8 text-center h-72 max-w-sm mx-auto">
                         <h1 className="text-2xl mb-3 underline">Professional</h1>
                         <p className="text-sm">Their professionalism towards their work shows how experienced and adept they are at their work. </p>
