@@ -4,6 +4,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
+import Footer from "../shared/Footer";
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('');
@@ -67,7 +68,7 @@ const Register = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="min-h-screen py-10 ">
+            <div className="min-h-screen py-10 mx-5 ">
                 <div className="flex-col">
                     <div className="text-center">
                         <h1 className="text-5xl font-bold">Register now!</h1>
@@ -105,7 +106,7 @@ const Register = () => {
                                 <input type="password" name='reenter-password' placeholder="password" className="input input-bordered" required />
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Register</button>
+                                <button className="btn bg-emerald-400 hover:bg-emerald-500">Register</button>
                             </div>
                             <div>
                                 {
@@ -119,6 +120,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

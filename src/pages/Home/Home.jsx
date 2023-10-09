@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import EventsCard from "./EventsCard";
 import Footer from "../shared/Footer";
 import Sponsor from "./Sponsor";
+import Review from "./Review";
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <Review></Review>
             <Sponsor></Sponsor>
             <Footer></Footer>
         </div>

@@ -19,6 +19,12 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/register'>Register</NavLink></li>
         <li><NavLink to='/login'>login</NavLink></li>
+        <div>
+        {
+            user &&
+        <li><NavLink to='/team'>Our Team</NavLink></li>
+        }
+        </div>
     </>
 
     return (
@@ -33,7 +39,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">TechTrek Events</a>
+                    <img className="w-40" src={"https://i.ibb.co/J3dYPKn/Color-logo-no-background.png"} alt="" />
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -41,22 +47,25 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {
-                        user && 
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
-                            <div className="w-10 rounded-full">
-                                <img src={user?.photoURL} />
-                            </div>
-                        </label>
-                    }
+                    {/* {
+                        user &&
+                        
+                    } */}
                     {
                         user ?
                             <>
-                                <p className="mr-4">{user.displayName}</p>
-                                <button onClick={handleLogOut} className="btn bg-transparent">Log Out</button>
+                                <div className="flex flex-col md:flex-row items-center">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+                                        <div className="w-8 md:w-10 rounded-full">
+                                            <img src={user?.photoURL} />
+                                        </div>
+                                    </label>
+                                    <p className="text-sm md:text-base mr-4">{user.displayName}</p>
+                                </div>
+                                <button onClick={handleLogOut} className="btn bg-emerald-400 hover:bg-emerald-500">Log Out</button>
                             </> :
                             <Link to='/login'>
-                                <button className="btn">Login</button>
+                                <button className="btn bg-emerald-400">Login</button>
                             </Link>
                     }
                 </div>

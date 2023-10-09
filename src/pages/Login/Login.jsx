@@ -3,6 +3,8 @@ import Navbar from "../shared/Navbar";
 import Swal from 'sweetalert2'
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import Footer from "../shared/Footer";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
     const [loginError, setLoginError] = useState('');
@@ -52,7 +54,7 @@ const Login = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className=" min-h-screen pt-10">
+            <div className=" min-h-screen pt-10 mx-5">
                 <div className=" flex-col">
                     <div className="text-center">
                         <h1 className="text-5xl font-bold">Login now!</h1>
@@ -75,7 +77,7 @@ const Login = () => {
                                 </label> */}
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn bg-emerald-400 hover:bg-emerald-500">Login</button>
                             </div>
                             <div>
                                 {
@@ -86,12 +88,13 @@ const Login = () => {
                                 <p>New user? <span><Link className="text-blue-700 font-semibold hover:underline" to='/register'>Register</Link> here</span></p>
                             </div>
                             <div className="form-control mt-6">
-                                <button onClick={handleGoogleSignIn} className="btn bg-lime-300 hover:bg-lime-400 font-semibold">Login with Google</button>
+                                <button onClick={handleGoogleSignIn} className="btn bg-emerald-200 hover:bg-emerald-400 font-semibold  flex items-center"><span className="text-xl"><FcGoogle></FcGoogle></span>Login with Google</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -4,13 +4,13 @@ const EventsCard = ({ event }) => {
     const { id, image, name } = event;
     return (
         <div>
-            <div className="card bg-base-100 shadow-lg h-[400px]">
+            <div className="card bg-base-100 shadow-lg h-[400px] mx-5">
                 <figure><img className="w-full h-52" src={image} alt="Shoes" /></figure>
                 <div className="card-body justify-between">
                     <h2 className="card-title">{name}</h2>
                     <div className="justify-between">
                         <Link to={`/event/${id}`}>
-                            <button className="btn w-full">See Details</button>
+                            <button className="btn w-full bg-emerald-400 hover:bg-emerald-500">See Details</button>
                         </Link>
                     </div>
                 </div>
